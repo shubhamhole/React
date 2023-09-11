@@ -15,10 +15,13 @@ import NestedTerniaryOperator from './components/NestedTerniaryOperator';
 // import Props from './components/Props';
 import ObjectProps from './components/ObjectProps';
 import OnChnageEvent from './components/OnChnageEvent';
+import { Component1 } from './components/PropDrilling';
 import PropsinClasscomp from './components/PropsinClasscomp';
 import StateIntro from './components/StateIntro';
 import StyleIntro from './components/StyleIntro';
 import TerniaryOperators from './components/TerniaryOperator';
+import UseEffectIntro from './components/UseEffectIntro';
+import UseStateIntro from './components/UseStateIntro';
 
 function App() {
   return (
@@ -43,8 +46,11 @@ function App() {
       <StyleIntro/> 
       <NestedTerniaryOperator/>
       <MultipleConditionTerniary/>
-      */}
       <BasicReactForm/>
+      <UseStateIntro/>
+      <UseEffectIntro/>
+      */}
+      <Component1/>
     </div>
   );
 }
