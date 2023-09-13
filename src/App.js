@@ -26,6 +26,9 @@ import UseReference from './components/UseReference';
 import UseStateIntro from './components/UseStateIntro';
 import UseContextIntro from './components/UseContextIntro';
 import Todos from './components/UseReducerIntro';
+import UseReducerSimpleEx from './components/UseReducerSimpleEx';
+import UseCallBackIntro from './components/UseCallBackIntro';
+import UseMemoIntro from './components/UseMemoIntro';
 
 
 function App() {
@@ -57,8 +60,11 @@ function App() {
       <Component1/>
       <UseContext/>
       <UseReference/>
-      */}
       <Todos/>
+      <UseReducerSimpleEx/>
+      <UseCallBackIntro/>
+      */}
+      <UseMemoIntro/>
     </div>
   );
 }
