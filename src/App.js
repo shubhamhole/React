@@ -1,4 +1,5 @@
 import './App.css';
+import UseContext from './components/UseContextIntro';
 import BasicReactForm from './components/BasicReactForm';
 import Counter from './components/Counter';
 import EventIntro from './components/EventIntro';
@@ -21,7 +22,11 @@ import StateIntro from './components/StateIntro';
 import StyleIntro from './components/StyleIntro';
 import TerniaryOperators from './components/TerniaryOperator';
 import UseEffectIntro from './components/UseEffectIntro';
+import UseReference from './components/UseReference';
 import UseStateIntro from './components/UseStateIntro';
+import UseContextIntro from './components/UseContextIntro';
+import Todos from './components/UseReducerIntro';
+
 
 function App() {
   return (
@@ -49,8 +54,11 @@ function App() {
       <BasicReactForm/>
       <UseStateIntro/>
       <UseEffectIntro/>
-      */}
       <Component1/>
+      <UseContext/>
+      <UseReference/>
+      */}
+      <Todos/>
     </div>
   );
 }
