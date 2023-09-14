@@ -3,15 +3,14 @@ import React, { useMemo, useState } from 'react'
 function UseMemoIntro() {
     const [number,setNumber]=useState(0)
 
+    function squaredNum(number){
+      console.log("Squared will be done")
+      return Math.pow(number,2)
+  }
 
-    const squaredNum=useMemo(()=>{
-        return SquaredNum(number)
+     squaredNum=useMemo(()=>{
+        return squaredNum(number)
     },[number])
-
-    function SquaredNum(number){
-        console.log("Squared will be done")
-        return Math.pow(number,2)
-    }
 
     const [counter,setCounter]=useState(0)
 
