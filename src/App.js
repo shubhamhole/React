@@ -29,9 +29,19 @@ import Todos from './components/UseReducerIntro';
 import UseReducerSimpleEx from './components/UseReducerSimpleEx';
 import UseCallBackIntro from './components/UseCallBackIntro';
 import UseMemoIntro from './components/UseMemoIntro';
+import UseCustomeHookImpl from './components/UseCustomeHookImpl';
+import UseCustomeHook2 from './components/UseCustomeHook2';
+import Constructor from './ClassLifeCycle/Constructor';
+import Counter1 from './ClassLifeCycle/getShouldComponentUpdate';
+import { useState } from 'react';
+import Header from './ClassLifeCycle/getDerviedStateFromProps';
 
 
 function App() {
+  const [counter1,setCounter1]=useState(0)
+  function increase1() {
+    setCounter1(counter1+1)
+  }
   return (
     <div className="App">
       {/* <Home/>
@@ -63,8 +73,13 @@ function App() {
       <Todos/>
       <UseReducerSimpleEx/>
       <UseCallBackIntro/>
-      */}
       <UseMemoIntro/>
+      <UseCustomeHookImpl/>
+      <UseCustomeHook2/>
+      <Constructor/>
+      <Counter1 value={counter1} onClick={increase1}/>
+      */}
+      <Header favcol='yellow'/>
     </div>
   );
 }
